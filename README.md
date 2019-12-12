@@ -24,7 +24,7 @@ MiddleDown()              // Hold down middle mouse button
 MiddleUp()                // Release middle mouse button
 MouseDown()               // Hold down left mouse button
 MouseUp()                 // Release left mouse button
-MoveMouse(int x, y [, int width, height]) // Move the mouse to a location (width and height add randomization)
+MoveMouse(int x, y [, int width, height]) // Move the mouse (width and height add randomization)
 PressKey(string key, int seconds) // Press a key for a certain amount of time
 Prompt(string message [, string title]) // Get a string input from the user
 Random(int a [, b])       // Generate a random integer from a to b, [or 0 to a]
