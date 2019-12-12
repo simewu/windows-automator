@@ -40,7 +40,7 @@ ScreenWidth()             // Returns the screen's width
 SetCursor(int x, y)       // Set the cursor position instantly
 Sleep(int milliseconds)   // Pause execution for a certain amount of time
 ```
-*Appending "//Interval: X" to the first line of the code (where X is the number of seconds) will override the "Number of seconds per refresh" parameter when the code executes, this is so that saving and loading scripts can preserve the refresh rate. This is extra line of code is optional.*
+*Appending "//Interval: X" to the first line of the code (where X is the number of seconds) will override the "Number of seconds per refresh" parameter when the code executes, this is so that saving and loading scripts can preserve the refresh rate. This extra line of code is optional.*
 
 ![](/screenshots/1.png)
 
