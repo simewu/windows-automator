@@ -9,38 +9,38 @@ These customizations have limitations that require them to behave like a human, 
 
 The custom functions are as follows:
 ```csharp
-ElapsedMilliseconds() // Returns number of milliseconds since simulation began
-ElapsedSeconds() // Returns number of seconds since simulation began
-ElapsedMinutes() // Returns number of minutes since simulation began
-ElapsedHours() // Returns number of hours since simulation began
 Alert(message) // Display a message box to the user
-Prompt(message [, title]) // Get a string input from the user
-Sleep(milliseconds) // Pause execution for a certain amount of time
-RandomF([a,] b) // Generate a random double from a to b
-Random([a,] b) // Generate a random integer from a to b
-IsKeyDown(key) // Returns true if key is currently pressed down
-PressKey(key, seconds) // Presses a key for a certain amount of time
-KeyDown(key) // Holds down a key
-KeyUp(key) // Releases a key
+Break([message]) // Stop the program
+Click() // Send a left click keystroke
+ElapsedHours() // Returns number of hours since simulation began
+ElapsedMilliseconds() // Returns number of milliseconds since simulation began
+ElapsedMinutes() // Returns number of minutes since simulation began
+ElapsedSeconds() // Returns number of seconds since simulation began
 FastType(message) // Send instant keystrokes to type a message
 FastType(message) // Send keystrokes to type a message with pauses
-MoveMouse(x, y [, width, height]) // Animate the mouse moving to a portion of the screen
-SetCursor(x, y) // Set the cursor position instantly
+GetColorAt(x, y) // Returns a (R, G, B) color at screen point
 GetCursorX() // Get the cursor's x-position
 GetCursorY() // Get the cursor's y-position
-RightClick() // Send a right click keystroke
-RMouseDown() // Holds down right mouse button
-RMouseUp() // Releases right mouse button
+IsKeyDown(key) // Returns true if key is currently pressed down
+KeyDown(key) // Holds down a key
+KeyUp(key) // Releases a key
 MiddleClick() // Send a middle click keystroke
 MiddleDown() // Holds down middle mouse button
 MiddleUp() // Releases middle mouse button
-Click() // Send a left click keystroke
 MouseDown() // Holds down left mouse button
 MouseUp() // Releases left mouse button
-ScreenWidth() // Returns the screens width
+MoveMouse(x, y [, width, height]) // Animate the mouse moving to a portion of the screen
+PressKey(key, seconds) // Presses a key for a certain amount of time
+Prompt(message [, title]) // Get a string input from the user
+Random([a,] b) // Generate a random integer from a to b
+RandomF([a,] b) // Generate a random double from a to b
+RightClick() // Send a right click keystroke
+RMouseDown() // Holds down right mouse button
+RMouseUp() // Releases right mouse button
 ScreenHeight() // Returns the screens height
-GetColorAt(x, y) // Returns a (R, G, B) color at screen point
-Break([message]) // Stop the program
+ScreenWidth() // Returns the screens width
+SetCursor(x, y) // Set the cursor position instantly
+Sleep(milliseconds) // Pause execution for a certain amount of time
 ```
 
 The "build" branch contains the pre-built binary, however, it is recommended to build the application yourself in Visual Studio.
