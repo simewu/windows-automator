@@ -5,8 +5,6 @@ Rather than limiting the user, the application takes advantage of C# reflection 
 
 These customizations have limitations that require them to behave like a human, so that the specifics of how the mouse moves, and how long key presses should be pressed for, etc..., is all handled by the application. Then the user has access to functions such as MoveMouse, PressKey, RealisticType, ... that take care of this human-like requirement.
 
-![](/screenshots/1.png)
-
 The custom functions are as follows:
 ```csharp
 Alert(string message)     // Display a message box to the user
@@ -42,6 +40,8 @@ ScreenWidth()             // Returns the screens width
 SetCursor(int x, y)   // Set the cursor position instantly
 Sleep(int milliseconds)   // Pause execution for a certain amount of time
 ```
+
+![](/screenshots/1.png)
 
 The "build" branch contains the pre-built binary, however, it is encouraged to build the application yourself in Visual Studio.
 The executable requires the file "InputSimulator.dll" to be in the same directory as the executable.
