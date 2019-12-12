@@ -43,5 +43,5 @@ SetCursor(x, y)   // Set the cursor position instantly
 Sleep(milliseconds) // Pause execution for a certain amount of time
 ```
 
-The "build" branch contains the pre-built binary, however, it is recommended to build the application yourself in Visual Studio.
+The "build" branch contains the pre-built binary, however, it is encouraged to build the application yourself in Visual Studio.
 The executable requires the file "InputSimulator.dll" to be in the same directory as the executable.
