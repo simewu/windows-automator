@@ -15,7 +15,7 @@ ElapsedMilliseconds()     // Returns number of milliseconds since simulation beg
 ElapsedMinutes()          // Returns number of minutes since simulation began
 ElapsedSeconds()          // Returns number of seconds since simulation began
 FastType(string message)  // Send instant keystrokes to type a message
-GetColorAt(int x, y)          // Returns a (R, G, B) color at screen point
+GetColorAt(int x, y)      // Returns a (R, G, B) color at screen point
 GetCursorX()              // Get the cursor's x-position
 GetCursorY()              // Get the cursor's y-position
 IsKeyDown(string key)     // Returns true if key is currently pressed down
@@ -29,15 +29,15 @@ MouseUp()                 // Releases left mouse button
 MoveMouse(int x, y [, int width, height]) // Animate the mouse moving to a portion of the screen
 PressKey(string key, int seconds) // Presses a key for a certain amount of time
 Prompt(string message [, string title]) // Get a string input from the user
-Random(int a [, b])   // Generate a random integer from a to b, [or 0 to a]
-RandomF(float a [, b]) // Generate a random double from a to b, [or 0 to a]
+Random(int a [, b])       // Generate a random integer from a to b, [or 0 to a]
+RandomF(float a [, b])    // Generate a random double from a to b, [or 0 to a]
 RealisticType(string message) // Send keystrokes to type a message with pauses
 RightClick()              // Send a right click keystroke
 RMouseDown()              // Holds down right mouse button
 RMouseUp()                // Releases right mouse button
 ScreenHeight()            // Returns the screens height
 ScreenWidth()             // Returns the screens width
-SetCursor(int x, y)   // Set the cursor position instantly
+SetCursor(int x, y)       // Set the cursor position instantly
 Sleep(int milliseconds)   // Pause execution for a certain amount of time
 ```
 
