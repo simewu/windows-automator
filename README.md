@@ -17,7 +17,6 @@ ElapsedMilliseconds() // Returns number of milliseconds since simulation began
 ElapsedMinutes()  // Returns number of minutes since simulation began
 ElapsedSeconds()  // Returns number of seconds since simulation began
 FastType(message) // Send instant keystrokes to type a message
-FastType(message) // Send keystrokes to type a message with pauses
 GetColorAt(x, y)  // Returns a (R, G, B) color at screen point
 GetCursorX()      // Get the cursor's x-position
 GetCursorY()      // Get the cursor's y-position
@@ -34,6 +33,7 @@ PressKey(key, seconds) // Presses a key for a certain amount of time
 Prompt(message [, title]) // Get a string input from the user
 Random(a [, b])    // Generate a random integer from a to b, [or 0 to a]
 RandomF(a [, b])   // Generate a random double from a to b, [or 0 to a]
+Realistic(message) // Send keystrokes to type a message with pauses
 RightClick()      // Send a right click keystroke
 RMouseDown()      // Holds down right mouse button
 RMouseUp()        // Releases right mouse button
