@@ -33,7 +33,7 @@ PressKey(key, seconds) // Presses a key for a certain amount of time
 Prompt(message [, title]) // Get a string input from the user
 Random(a [, b])    // Generate a random integer from a to b, [or 0 to a]
 RandomF(a [, b])   // Generate a random double from a to b, [or 0 to a]
-Realistic(message) // Send keystrokes to type a message with pauses
+RealisticType(message) // Send keystrokes to type a message with pauses
 RightClick()      // Send a right click keystroke
 RMouseDown()      // Holds down right mouse button
 RMouseUp()        // Releases right mouse button
