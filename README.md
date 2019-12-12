@@ -21,7 +21,7 @@ GetCursorY()              // Gets the cursor's y-position
 IsKeyDown(string key)     // Returns true if key is currently pressed down
 KeyDown(string key)       // Holds down a key
 KeyUp(string key)         // Releases a key
-MiddleClick()             // Send a middle click keystroke
+MiddleClick()             // Sends a middle click keystroke
 MiddleDown()              // Holds down middle mouse button
 MiddleUp()                // Releases middle mouse button
 MouseDown()               // Holds down left mouse button
