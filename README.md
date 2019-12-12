@@ -32,8 +32,8 @@ MouseUp()         // Releases left mouse button
 MoveMouse(x, y [, width, height]) // Animate the mouse moving to a portion of the screen
 PressKey(key, seconds) // Presses a key for a certain amount of time
 Prompt(message [, title]) // Get a string input from the user
-Random([a,] b)    // Generate a random integer from a to b
-RandomF([a,] b)   // Generate a random double from a to b
+Random(a [, b])    // Generate a random integer from a to b, [or 0 to a]
+RandomF(a [, b])   // Generate a random double from a to b, [or 0 to a]
 RightClick()      // Send a right click keystroke
 RMouseDown()      // Holds down right mouse button
 RMouseUp()        // Releases right mouse button
