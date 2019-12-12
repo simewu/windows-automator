@@ -1,7 +1,7 @@
 # Windows Automator
-Create bots, automate yourself using C#. This bot was built to simulate human interaction as realistically as possible, by moving the mouse, typing, clicking, and pressing keys in such a way that it is indistinguishable from a human.
+Create bots and automate yourself using C#. This bot was built to simulate human interaction as realistically as possible, by moving the mouse, typing, clicking, and pressing keys in such a way that it is indistinguishable from a human.
 
-Rather than limiting the user, the application takes advantage of C# reflection to allow the user to customize their bot however they please. These customizations have limitations that require them to behave like a human, so that the specifics of how the mouse moves, how long each key should be pressed, etc..., is all handled by the application. Then the user has access to functions such as MoveMouse, PressKey, RealisticType, ... that take care of this human-like requirement.
+Rather than limiting the user, this application takes advantage of C# reflection to allow the user to customize their bot however they please. These customizations have limitations that require them to behave like a human, so that the specifics of how the mouse moves, how long each key should be pressed, etc..., are all handled by the application. Then the user has access to functions that take care of this human-like constraint.
 
 The custom functions are as follows:
 ```csharp
