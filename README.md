@@ -9,38 +9,38 @@ These customizations have limitations that require them to behave like a human, 
 
 The custom functions are as follows:
 ```csharp
-Alert(message)    // Display a message box to the user
-Break([message])  // Stop the program
-Click()           // Send a left click keystroke
-ElapsedHours()    // Returns number of hours since simulation began
-ElapsedMilliseconds() // Returns number of milliseconds since simulation began
-ElapsedMinutes()  // Returns number of minutes since simulation began
-ElapsedSeconds()  // Returns number of seconds since simulation began
-FastType(message) // Send instant keystrokes to type a message
-GetColorAt(x, y)  // Returns a (R, G, B) color at screen point
-GetCursorX()      // Get the cursor's x-position
-GetCursorY()      // Get the cursor's y-position
-IsKeyDown(key)    // Returns true if key is currently pressed down
-KeyDown(key)      // Holds down a key
-KeyUp(key)        // Releases a key
-MiddleClick()     // Send a middle click keystroke
-MiddleDown()      // Holds down middle mouse button
-MiddleUp()        // Releases middle mouse button
-MouseDown()       // Holds down left mouse button
-MouseUp()         // Releases left mouse button
-MoveMouse(x, y [, width, height]) // Animate the mouse moving to a portion of the screen
-PressKey(key, seconds) // Presses a key for a certain amount of time
-Prompt(message [, title]) // Get a string input from the user
-Random(a [, b])    // Generate a random integer from a to b, [or 0 to a]
-RandomF(a [, b])   // Generate a random double from a to b, [or 0 to a]
-RealisticType(message) // Send keystrokes to type a message with pauses
-RightClick()      // Send a right click keystroke
-RMouseDown()      // Holds down right mouse button
-RMouseUp()        // Releases right mouse button
-ScreenHeight()    // Returns the screens height
-ScreenWidth()     // Returns the screens width
-SetCursor(x, y)   // Set the cursor position instantly
-Sleep(milliseconds) // Pause execution for a certain amount of time
+Alert(string message)     // Display a message box to the user
+Break([string message])   // Stop the program
+Click()                   // Send a left click keystroke
+ElapsedHours()            // Returns number of hours since simulation began
+ElapsedMilliseconds()     // Returns number of milliseconds since simulation began
+ElapsedMinutes()          // Returns number of minutes since simulation began
+ElapsedSeconds()          // Returns number of seconds since simulation began
+FastType(string message)  // Send instant keystrokes to type a message
+GetColorAt(x, y)          // Returns a (R, G, B) color at screen point
+GetCursorX()              // Get the cursor's x-position
+GetCursorY()              // Get the cursor's y-position
+IsKeyDown(string key)     // Returns true if key is currently pressed down
+KeyDown(string key)       // Holds down a key
+KeyUp(string key)         // Releases a key
+MiddleClick()             // Send a middle click keystroke
+MiddleDown()              // Holds down middle mouse button
+MiddleUp()                // Releases middle mouse button
+MouseDown()               // Holds down left mouse button
+MouseUp()                 // Releases left mouse button
+MoveMouse(x, y [, int width, int height]) // Animate the mouse moving to a portion of the screen
+PressKey(string key, int seconds) // Presses a key for a certain amount of time
+Prompt(message [, string title]) // Get a string input from the user
+Random(a [, b])           // Generate a random integer from a to b, [or 0 to a]
+RandomF(float a [, float b]) // Generate a random double from a to b, [or 0 to a]
+RealisticType(string message) // Send keystrokes to type a message with pauses
+RightClick()              // Send a right click keystroke
+RMouseDown()              // Holds down right mouse button
+RMouseUp()                // Releases right mouse button
+ScreenHeight()            // Returns the screens height
+ScreenWidth()             // Returns the screens width
+SetCursor(int x, int y)   // Set the cursor position instantly
+Sleep(int milliseconds)   // Pause execution for a certain amount of time
 ```
 
 The "build" branch contains the pre-built binary, however, it is encouraged to build the application yourself in Visual Studio.
