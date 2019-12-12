@@ -31,7 +31,7 @@ MouseUp()                 // Releases left mouse button
 MoveMouse(x, y [, int width, int height]) // Animate the mouse moving to a portion of the screen
 PressKey(string key, int seconds) // Presses a key for a certain amount of time
 Prompt(message [, string title]) // Get a string input from the user
-Random(a [, b])           // Generate a random integer from a to b, [or 0 to a]
+Random(int a [, int b])   // Generate a random integer from a to b, [or 0 to a]
 RandomF(float a [, float b]) // Generate a random double from a to b, [or 0 to a]
 RealisticType(string message) // Send keystrokes to type a message with pauses
 RightClick()              // Send a right click keystroke
