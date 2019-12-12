@@ -1,42 +1,40 @@
 # Windows Automator
 Create bots, automate yourself using C#. This bot was built to simulate human interaction as realistically as possible, by moving the mouse, typing, clicking, and pressing keys in such a way that it is indistinguishable from a human.
 
-Rather than limiting the user, the application takes advantage of C# reflection to allow the user to customize their bot however they please, then save/load their bot files.
-
-These customizations have limitations that require them to behave like a human, so that the specifics of how the mouse moves, and how long key presses should be pressed for, etc..., is all handled by the application. Then the user has access to functions such as MoveMouse, PressKey, RealisticType, ... that take care of this human-like requirement.
+Rather than limiting the user, the application takes advantage of C# reflection to allow the user to customize their bot however they please. These customizations have limitations that require them to behave like a human, so that the specifics of how the mouse moves, how long each key should be pressed, etc..., is all handled by the application. Then the user has access to functions such as MoveMouse, PressKey, RealisticType, ... that take care of this human-like requirement.
 
 The custom functions are as follows:
 ```csharp
-Alert(string message)     // Displays a message dialog box to the user
-Break([string message])   // Stops the program
-Click()                   // Sends a left click keystroke
-ElapsedHours()            // Returns number of hours since simulation began
-ElapsedMilliseconds()     // Returns number of milliseconds since simulation began
-ElapsedMinutes()          // Returns number of minutes since simulation began
-ElapsedSeconds()          // Returns number of seconds since simulation began
-FastType(string message)  // Sends instant keystrokes to type a message
-GetColorAt(int x, y)      // Returns a (R, G, B) color at screen point
-GetCursorX()              // Gets the cursor's x-position
-GetCursorY()              // Gets the cursor's y-position
-IsKeyDown(string key)     // Returns true if key is currently pressed down
-KeyDown(string key)       // Holds down a key
-KeyUp(string key)         // Releases a key
-MiddleClick()             // Sends a middle click keystroke
-MiddleDown()              // Holds down middle mouse button
-MiddleUp()                // Releases middle mouse button
-MouseDown()               // Holds down left mouse button
-MouseUp()                 // Releases left mouse button
-MoveMouse(int x, y [, int width, height]) // Animates the mouse moving to a portion of the screen (providing width and height adds extra randomization)
-PressKey(string key, int seconds) // Presses a key for a certain amount of time
-Prompt(string message [, string title]) // Gets a string input from the user
-Random(int a [, b])       // Generates a random integer from a to b, [or 0 to a]
-RandomF(float a [, b])    // Generates a random float from a to b, [or 0 to a]
-RealisticType(string message) // Sends keystrokes to type a message with pauses
-RightClick()              // Sends a right click keystroke
-RMouseDown()              // Holds down right mouse button
-RMouseUp()                // Releases right mouse button
-ScreenHeight()            // Returns the screen's height
-ScreenWidth()             // Returns the screen's width
+Alert(string message)     // Display a message dialog box to the user
+Break([string message])   // Stop the program
+Click()                   // Send a left click keystroke
+ElapsedHours()            // Return number of hours since simulation began
+ElapsedMilliseconds()     // Return number of milliseconds since simulation began
+ElapsedMinutes()          // Return number of minutes since simulation began
+ElapsedSeconds()          // Return number of seconds since simulation began
+FastType(string message)  // Send instant keystrokes to type a message
+GetColorAt(int x, y)      // Return a (R, G, B) color at screen point
+GetCursorX()              // Get the cursor's x-position
+GetCursorY()              // Get the cursor's y-position
+IsKeyDown(string key)     // Return true if key is currently pressed down
+KeyDown(string key)       // Hold down a key
+KeyUp(string key)         // Release a key
+MiddleClick()             // Send a middle click keystroke
+MiddleDown()              // Hold down middle mouse button
+MiddleUp()                // Release middle mouse button
+MouseDown()               // Hold down left mouse button
+MouseUp()                 // Release left mouse button
+MoveMouse(int x, y [, int width, height]) // Move the mouse to a location (width and height add randomization)
+PressKey(string key, int seconds) // Press a key for a certain amount of time
+Prompt(string message [, string title]) // Get a string input from the user
+Random(int a [, b])       // Generate a random integer from a to b, [or 0 to a]
+RandomF(float a [, b])    // Generate a random float from a to b, [or 0 to a]
+RealisticType(string message) // Send keystrokes to type a message with pauses
+RightClick()              // Send a right click keystroke
+RMouseDown()              // Hold down right mouse button
+RMouseUp()                // Release right mouse button
+ScreenHeight()            // Return the screen's height
+ScreenWidth()             // Return the screen's width
 SetCursor(int x, y)       // Set the cursor position instantly
 Sleep(int milliseconds)   // Pause execution for a certain amount of time
 ```
